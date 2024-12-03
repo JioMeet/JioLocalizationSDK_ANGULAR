@@ -69,7 +69,7 @@ export class AppModule {}
 Translating using pipe:
 
 ```html
-<h1>{{&#39;hello_world&#39; | jiotms}}</h1>
+<h1>{{"hello_world" | jiotms}}</h1>
 ```
 
 Or using jio-tms attribute
