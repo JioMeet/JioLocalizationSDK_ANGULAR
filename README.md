@@ -45,7 +45,7 @@ import {
           .use(DevTools())
           .use(FormatSimple())
           .init({
-            language: 'en'
+            language: 'en',
 
             // for development
             apiUrl: environment.jiotranslateApiUrl,

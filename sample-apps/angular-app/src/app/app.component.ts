@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { JioTranslateService } from '@jiotranslate/ngx-beta';
 
 @Component({
@@ -13,7 +13,7 @@ export class AppComponent {
     this.jiotranslateService
       .jiotranslate()
       .changeLanguage(
-        this.jiotranslateService.language() == 'en' ? 'hi-IN' : 'en'
+        this.jiotranslateService.language() === 'en' ? 'hi-IN' : 'en'
       );
   }
   title = 'my-angular-app';
